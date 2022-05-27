@@ -14,6 +14,7 @@ export function startTracker(config) {
     const getUserId = (config?.userIdEnabled && config?.getUserId) ? config.getUserId : defaultGetUserId
     let userId = null;
 
+    console.log("Project key used: ", config.projectKey)
     const trackerConfig = {
         projectKey: config.projectKey 
     }
