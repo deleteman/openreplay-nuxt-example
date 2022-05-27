@@ -1,5 +1,5 @@
 import Tracker from '@openreplay/tracker';
-import trackerFetch from '@openreplay/tracker-fetch/cjs';
+//import trackerFetch from '@openreplay/tracker-fetch/cjs';
 
 import {v4 as uuidV4} from 'uuid'
 
@@ -20,9 +20,11 @@ export function startTracker(config) {
     }
 
     const tracker = new Tracker(trackerConfig);
+    /*
     tracker.use(trackerFetch({
         overrideGlobal: true
     })); // check list of available options below
+    */
 
 
     if(config?.userIdEnabled) {
